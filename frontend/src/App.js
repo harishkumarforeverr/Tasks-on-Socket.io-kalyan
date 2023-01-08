@@ -47,13 +47,9 @@ const dummydataSource = [
   },
 ];
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [obj, setobj] = useState({
-    name: "harish",
-    last: "kumar",
-    job: "React.js",
-    email: "haris1234h@gmail.com",
-    id: 1234,
+    
   });
   const [dataSource, setdataSource] = useState(dummydataSource);
   const showModal = (arg) => {
