@@ -12,6 +12,7 @@ import {
   DeleteFilled,
   CloseCircleFilled,
   CloseOutlined,
+  CloseSquareFilled,
 } from "@ant-design/icons";
 // no dotenv
 const socket = io.connect("http://localhost:7077");
@@ -228,7 +229,7 @@ function App() {
                 />
               </span>
               <span>
-                <CloseCircleFilled
+                <CloseSquareFilled
                   onClick={handleOk}
                   style={{
                     color: "red",
@@ -375,7 +376,9 @@ function App() {
                   }}
                 >
                   <FormControl fullWidth>
-                    <InputLabel id="Affilicationids">Affilicationids</InputLabel>
+                    <InputLabel id="Affilicationids">
+                      Affilicationids
+                    </InputLabel>
                     <Select
                       labelId="Affilicationids"
                       id="demo-simple-select"
