@@ -11,32 +11,9 @@ import "./Conatiner2.css";
 import { Button, Card, Select } from "antd";
 // import videoIcons from "./videoIcons.jpeg";
 function Conatiner2() {
-  const userInfoObj = [
-    {
-      title: "Users's Guide",
-      icons: <UserOutlined />,
-    },
-    {
-      title: "Product Page",
-      icons: <ExperimentOutlined />,
-    },
-    {
-      title: "Data Sheet",
-      icons: <ProjectOutlined />,
-    },
-    {
-      title: "Tuning Page",
-      icons: <SettingOutlined />,
-    },
-    {
-      title: "Tools Page",
-      icons: <PullRequestOutlined />,
-    },
-    {
-      title: "E2E testing",
-      icons: <TransactionOutlined />,
-    },
-  ];
+  // const userInfoObj = [
+    
+  // ];
   return (
     <div className="Conatiner2sIconsTitle">
       <div>
@@ -101,7 +78,7 @@ function Conatiner2() {
         </div>
       </div>
       <div className="cardsRigghtContainer">
-        {userInfoObj.map((obj) => {
+        {/* {userInfoObj.map((obj) => {
           return (
             <Card
               className="boxshadow conatiner2CardImage"
@@ -112,7 +89,7 @@ function Conatiner2() {
               <div className="titleRightConatiner2">{obj.title}</div>
             </Card>
           );
-        })}
+        })} */}
       </div>
     </div>
   );
