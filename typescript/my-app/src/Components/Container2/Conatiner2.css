@@ -44,6 +44,11 @@
   width: 26rem !important;
   height: 19.5rem !important;
 }
+.hardware{
+  margin: 1%;
+  width: 26rem !important;
+  /* height: 19.5rem !important */
+}
 .conatiner2CardImage {
   margin: 1%;
   /* width: 16rem !important;
@@ -74,4 +79,9 @@
 }
 .videoIcon {
   width: 85%;
+}
+
+.hardware{
+  display: flex;
+  
 }

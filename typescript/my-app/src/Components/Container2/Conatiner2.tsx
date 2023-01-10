@@ -9,11 +9,50 @@ import {
 } from "@ant-design/icons";
 import "./Conatiner2.css";
 import { Button, Card, Select } from "antd";
+// import Image1 from "./Capture1.PNG";
+// import Image2 from "./Capture2.PNG";
+// import Image1 from "./capture1.PNG";
+// import Image3 from "./Capture3.PNG";
+// import Image4 from "./Capture4.PNG";
+// import Image5 from "./Capture5.PNG";
+// import Image6 from "./Capture6.PNG";
+// import Image7 from "./Capture7.PNG";
 // import videoIcons from "./videoIcons.jpeg";
 function Conatiner2() {
-  // const userInfoObj = [
-    
-  // ];
+  const userInfoObj = [
+    {
+      image: require("./capture1.PNG"),
+      title: "Hardware Setup",
+      desc: "configure harware and perform and GUI and comminucation checkup",
+    },
+    {
+      image: require("./Capture2.PNG"),
+      title: "software Setup",
+      desc: "Samart harware and perform ",
+    },
+  ];
+  const InfoObj = [
+    {
+      image: require("./Capture3.PNG"),
+      title: "Edge Setup",
+      desc: "configure harware and perform and GUI and comminucation checkup",
+    },
+    {
+      image: require("./Capture4.PNG"),
+      title: "Popup Setup",
+      desc: "Samart harware and perform ",
+    },
+    {
+      image: require("./Capture5.PNG"),
+      title: "Iron Setup",
+      desc: "configure harware and perform and GUI and comminucation checkup",
+    },
+    {
+      image: require("./Capture6.PNG"),
+      title: "Apple Setup",
+      desc: "Samart harware and perform ",
+    },
+  ];
   return (
     <div className="Conatiner2sIconsTitle">
       <div>
@@ -60,7 +99,7 @@ function Conatiner2() {
           </div>
           <div>
             <div className="deatiles">
-              <span className="redColor"></span>
+              <span className="greenColor"></span>
               <span className="numberText">ICMF3RTUSJSKKS</span>
             </div>
             <p
@@ -77,19 +116,104 @@ function Conatiner2() {
           {/* <img className="videoIcon" style={{}} src={videoIcons} /> */}
         </div>
       </div>
-      <div className="cardsRigghtContainer">
-        {/* {userInfoObj.map((obj) => {
-          return (
-            <Card
-              className="boxshadow conatiner2CardImage"
-              bordered={false}
-              style={{ width: 300 }}
-            >
-              <div className="rightConatinesIcons">{obj.icons}</div>
-              <div className="titleRightConatiner2">{obj.title}</div>
-            </Card>
-          );
-        })} */}
+      <div>
+        <h2
+          style={{
+            color: "#165c65",
+            marginLeft: "1rem",
+          }}
+        >
+          Getting started
+        </h2>
+        <div
+          style={{
+            display: "flex",
+            gap: "1rem",
+          }}
+        >
+          {userInfoObj.map((obj) => {
+            return (
+              <Card
+                className="boxshadow hardware"
+                bordered={false}
+                style={{ width: 300 }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "1rem",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <div>
+                    <img src={obj.image} />
+                  </div>
+                  <div>
+                    <h3
+                      style={{
+                        color: "#165c65",
+                      }}
+                    >
+                      {obj.title}
+                    </h3>
+                    <p>{obj.desc}</p>
+                  </div>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+      <div>
+        <h2
+          style={{
+            color: "#165c65",
+            marginLeft: "1rem",
+          }}
+        >
+          Optimization Widget
+        </h2>
+        <div
+          style={{
+            display: "grid",
+            gap: "1rem",
+            gridTemplateColumns: "1fr 1fr 1fr",
+          }}
+        >
+          {InfoObj.map((obj) => {
+            return (
+              <Card
+                className="boxshadow hardware"
+                bordered={false}
+                style={{ width: 300 }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "1rem",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <div>
+                    <img src={obj.image} />
+                  </div>
+                  <div>
+                    <h3
+                      style={{
+                        color: "#165c65",
+                      }}
+                    >
+                      {obj.title}
+                    </h3>
+                    <p>{obj.desc}</p>
+                  </div>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

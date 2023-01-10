@@ -5,10 +5,10 @@
   font-size: 1.3rem !important;
 }
 
-.redColor {
+.greenColor {
   height: 25px;
   width: 25px;
-  background-color: red;
+  background-color: green;
   border-radius: 50%;
   display: inline-block;
 }

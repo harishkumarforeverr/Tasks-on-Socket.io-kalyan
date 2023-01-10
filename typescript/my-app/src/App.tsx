@@ -27,14 +27,12 @@ function App() {
       >
         <div className="sidebar">
           {" "}
-          <Sidebar setView={setView}/>
+          <Sidebar setView={setView} />
         </div>
         <div className="body_container">
           <div className="body">
             {view == 1 && <Conatiner />}
             {view == 2 && <Conatiner2 />}
-
-            {/* <Conatiner2 /> */}
           </div>
         </div>
       </div>
