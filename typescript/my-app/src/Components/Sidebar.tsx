@@ -31,7 +31,7 @@ function Sidebar({ setView }: any) {
     {
       icon: <ProjectOutlined />,
       title: "Quick tuning",
-    },
+    }, 
     {
       icon: <PullRequestOutlined />,
       title: "MPET",
