@@ -27,6 +27,7 @@
   padding: 1%;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 3rem;
 }
 .cardsRigghtContainer {
   display: grid;
@@ -74,4 +75,42 @@
 }
 .videoIcon {
   width: 85%;
+}
+
+@media screen and (max-width: 1350px) {
+  .ConatinersIconsTitle {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .videoIcon_container {
+    /* margin: 0 auto; */
+    width: 26rem;
+  }
+  /* .videoIcon {
+    width: 55% !important;
+  } */
+}
+@media screen and (max-width: 950px) {
+  .cardsRigghtContainer {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .conatinerCardImage {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 70% !important;
+    margin: 0 auto;
+  }
+  .conatinerCard {
+    margin: 0 auto;
+  }
+  .videoIcon_container {
+    margin: 0 auto;
+    width: 26rem;
+  }
+  /* .videoIcon_container img {
+    width: 60% !important;
+  } */
 }

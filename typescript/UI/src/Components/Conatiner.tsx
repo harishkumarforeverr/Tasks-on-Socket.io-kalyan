@@ -96,8 +96,14 @@ function Conatiner() {
           </div>
           <Button className="lightRed btn">Select Motor</Button>
         </Card>
-        <div>
-          <img className="videoIcon" style={{}} src={videoIcons} />
+        <div style={{}} className="videoIcon_container">
+          <img
+            style={{
+              width: "100%",
+            }}
+            className="videoIcon"
+            src={videoIcons}
+          />
         </div>
       </div>
       <div className="cardsRigghtContainer">
