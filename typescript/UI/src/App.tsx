@@ -6,7 +6,7 @@ import Sidebar from "./Components/Sidebar";
 import Header from "./Components/Header";
 import HomePage from "./Components/HomePage";
 import OptimizationWidget from "./Components/OptimizationWidget/OptimizationWidget";
- 
+
 function App() {
   const [view, setView] = useState(1);
   return (
@@ -31,7 +31,7 @@ function App() {
         </div>
         <div className="body_container">
           <div className="body">
-            {view == 1 && <HomePage />}
+            {view == 1 && <HomePage setView={setView} />}
             {view == 2 && <OptimizationWidget />}
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   UserOutlined,
   SettingOutlined,
@@ -10,7 +10,13 @@ import {
 import "./HomePage.css";
 import { Button, Card, Select } from "antd";
 import videoIcons from "./videoIcons.jpeg";
-function HomePage() {
+function HomePage({ setView }: { setView: any }) {
+  const [motor, setMotor] = useState("");
+  const handleTheMotor = () => {
+    if (motor) {
+      setView(2);
+    }
+  };
   const userInfoObj = [
     {
       title: "Users's Guide",
@@ -61,6 +67,9 @@ function HomePage() {
               </span>
             </h1>
             <Select
+              onChange={(e) => {
+                setMotor(e);
+              }}
               style={{
                 width: "100%",
               }}
@@ -94,7 +103,9 @@ function HomePage() {
               The support of ICMF3RTUSJSKKS{" "}
             </p>
           </div>
-          <Button className="lightRed btn">Select Motor</Button>
+          <Button onClick={handleTheMotor} className="lightRed btn">
+            Select Motor
+          </Button>
         </Card>
         <div style={{}} className="videoIcon_container">
           <img
