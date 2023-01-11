@@ -1,8 +1,8 @@
-.HeadersIconsTitle{
+.HeadersIconsTitle {
   display: flex;
-  margin-left: 10rem;
+  margin-left: 1rem;
   width: 100%;
-  gap: 10rem;
+  gap: 12%;
   font-size: 1.2rem;
   color: white;
   font-weight: 600;
