@@ -44,7 +44,7 @@
   width: 26rem !important;
   height: 19.5rem !important;
 }
-.hardware{
+.hardware {
   margin: 1%;
   width: 26rem !important;
   /* height: 19.5rem !important */
@@ -81,7 +81,37 @@
   width: 85%;
 }
 
-.hardware{
+.hardware {
   display: flex;
-  
+}
+
+.optizmationWidget {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Gettingstarted {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1450px) {
+  .optizmationWidget,
+  .Gettingstarted {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .Conatiner2sIconsTitle {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Conatiner2sIconsTitle {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

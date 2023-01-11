@@ -7,10 +7,10 @@ import {
   ExperimentOutlined,
   TransactionOutlined,
 } from "@ant-design/icons";
-import "./Conatiner.css";
+import "./HomePage.css";
 import { Button, Card, Select } from "antd";
 import videoIcons from "./videoIcons.jpeg";
-function Conatiner() {
+function HomePage() {
   const userInfoObj = [
     {
       title: "Users's Guide",
@@ -124,4 +124,4 @@ function Conatiner() {
   );
 }
 
-export default Conatiner;
+export default HomePage;

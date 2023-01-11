@@ -7,7 +7,7 @@ import {
   ExperimentOutlined,
   TransactionOutlined,
 } from "@ant-design/icons";
-import "./Conatiner2.css";
+import "./OptimizationWidget.css";
 import { Button, Card, Select } from "antd";
 // import Image1 from "./Capture1.PNG";
 // import Image2 from "./Capture2.PNG";
@@ -18,7 +18,7 @@ import { Button, Card, Select } from "antd";
 // import Image6 from "./Capture6.PNG";
 // import Image7 from "./Capture7.PNG";
 // import videoIcons from "./videoIcons.jpeg";
-function Conatiner2() {
+function OptimizationWidget() {
   const userInfoObj = [
     {
       image: require("./capture1.PNG"),
@@ -125,12 +125,7 @@ function Conatiner2() {
         >
           Getting started
         </h2>
-        <div
-          style={{
-            display: "flex",
-            gap: "1rem",
-          }}
-        >
+        <div className="Gettingstarted">
           {userInfoObj.map((obj) => {
             return (
               <Card
@@ -174,13 +169,7 @@ function Conatiner2() {
         >
           Optimization Widget
         </h2>
-        <div
-          style={{
-            display: "grid",
-            gap: "1rem",
-            gridTemplateColumns: "1fr 1fr 1fr",
-          }}
-        >
+        <div className="optizmationWidget">
           {InfoObj.map((obj) => {
             return (
               <Card
@@ -219,4 +208,4 @@ function Conatiner2() {
   );
 }
 
-export default Conatiner2;
+export default OptimizationWidget;
