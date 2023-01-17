@@ -14,6 +14,7 @@ io.on("connection", (socket) => {
   socket.emit("connected", "Successfully connected to the test_socket");
 
   socket.on("hello-event", (payload) => {
+    io.emit("hello-event", payload);
     console.log("payload", payload);
   });
 });

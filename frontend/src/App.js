@@ -48,9 +48,7 @@ const dummydataSource = [
 ];
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [obj, setobj] = useState({
-    
-  });
+  const [obj, setobj] = useState({});
   const [dataSource, setdataSource] = useState(dummydataSource);
   const showModal = (arg) => {
     setobj(arg);
@@ -58,20 +56,20 @@ function App() {
   };
   const handleOk = () => {
     socket.emit("hello-event", { ...obj });
-    const newData = dataSource.map((arg) => {
-      if (arg.id == obj.id) return obj;
-      else return arg;
-    });
-    setdataSource(newData);
-    setIsModalOpen(false);
   };
   const handleCancel = () => {
     setIsModalOpen(false);
   };
 
   useEffect(() => {
-    socket.on("hello-event-listen", (payload) => {
-      console.log("hello-event-listen", payload);
+    socket.on("hello-event", (payload) => {
+      const newData = dataSource.map((arg) => {
+        if (arg.id == payload.id) return payload;
+        else return arg;
+      });
+      setdataSource(newData);
+      setIsModalOpen(false);
+      console.log("hello-event", payload);
     });
   }, [socket]);
   const handleTheSearch = (value) => {
