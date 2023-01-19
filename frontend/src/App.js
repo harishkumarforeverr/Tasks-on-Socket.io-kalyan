@@ -63,11 +63,12 @@ function App() {
 
   useEffect(() => {
     socket.on("hello-event", (payload) => {
-      const newData = dataSource.map((arg) => {
-        if (arg.id == payload.id) return payload;
-        else return arg;
-      });
-      setdataSource(newData);
+      // const newData = dataSource.map((arg) => {
+      //   if (arg.id == payload.id) return payload;
+      //   else return arg;
+      // });
+      console.log(dataSource, payload);
+      setdataSource((prevData) => [...prevData, payload]);
       setIsModalOpen(false);
       console.log("hello-event", payload);
     });
