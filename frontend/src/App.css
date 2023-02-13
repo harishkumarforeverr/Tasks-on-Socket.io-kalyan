@@ -56,9 +56,9 @@
   padding: 0 1rem 0.5rem 1rem;
   height: 2.5rem;
 }
-.saveAndClose { 
+.saveAndClose {
   background: green;
-  color: white; 
+  color: white;
 }
 .ant-modal {
   width: 70% !important;
@@ -79,76 +79,129 @@
 }
 .conatiner_model {
   display: grid;
-  grid-template-columns: 11rem 1fr;
-  
+  grid-template-columns: 16rem 1fr;
 }
-.addElement{
+.addElement {
   flex-basis: 18rem;
 }
 .addElement .anticon {
   font-size: 1.6rem;
-  margin:0;
+  margin: 0;
   color: white;
 }
 .addElement h1 {
   font-size: 1.6rem;
-  margin:0;
+  margin: 0;
   color: white;
   background-color: #12028a;
 }
 
-.playIcons{ 
-  color: #12028a; 
+.playIcons {
+  color: #12028a;
 }
-.DeleteBtn{
+.DeleteBtn {
   border-color: red;
   color: red;
 }
-.unstructuredbtn{
+.unstructuredbtn {
   border-color: #02208a;
   color: #02208a;
 }
-.PublishedBtn{
+.PublishedBtn {
   border-color: #02208a;
   color: #02208a;
   margin-left: 1rem;
 }
-.actions_buttons{
+.actions_buttons {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
   justify-items: center;
 }
-.editAble span{
+.editAble span {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.dummydataSourceModal_conatiner{
+.dummydataSourceModal_conatiner {
   background: white;
   min-height: 20rem;
+  padding-left: 2%;
 }
-.dummydataSourceModal{     
+.dummydataSourceModal {
   width: 100%;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
-  gap:.8rem;
+  gap: 0.8rem;
 }
-.dummydataSourceModal_p{
+.dummydataSourceModal_p {
   font-size: 1.6rem;
   margin: 0;
   word-wrap: break-word;
   word-break: break-all;
 }
-.href_a{
+.href_a {
   font-size: 1.5rem;
 }
-.inputTags{
-  width:5rem;
+.inputTags {
+  width: 5rem;
   height: 3rem;
   font-size: 1rem;
 }
- 
-.editAble{
+
+.editAble {
   border: 2.6px solid black;
+}
+.OriginalRefernce {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #315390;
+}
+.OriginalRefernce_conatiner {
+  border: 2px solid #8bade9;
+  width: 86%;
+  border-radius: 9px;
+  min-height: 5rem;
+}
+.Introduction h1 {
+  color: #315390;
+}
+.Introduction p {
+  font-size: 1.3rem;
+  color: #315390;
+  display: flex;
+}
+.Introduction p span:last-child {
+  margin-left: 0.2rem;
+}
+.Introduction span {
+  color: #315390;
+  width: 2rem;
+  display: inline-block;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 70%,
+    100% 99%,
+    50% 100%,
+    20% 90%,
+    11% 69%,
+    12% 37%,
+    20% 10%
+  );
+  background: #bfd2f5;
+  border: 2px solid #315390;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.2rem;
+}
+.addElement ul,
+.addElement ul:hover,
+.addElement ul li,
+.addElement ul li:hover, .ant-menu-item:hover, .ant-menu-submenu ,.ant-menu-submenu:hover {
+  width: 256px;
+  background: #032561 !important;
+  color: white !important;
 }
