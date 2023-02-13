@@ -120,6 +120,10 @@
   justify-content: center;
   justify-items: center;
 }
+.editAble span{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 .dummydataSourceModal_conatiner{
   background: white;
   min-height: 20rem;
@@ -143,4 +147,8 @@
   width:5rem;
   height: 3rem;
   font-size: 1rem;
+}
+ 
+.editAble{
+  border: 2.6px solid black;
 }
