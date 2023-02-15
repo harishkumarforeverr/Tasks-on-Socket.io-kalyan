@@ -174,7 +174,10 @@
 .Introduction p span:last-child {
   margin-left: 0.2rem;
 }
-.Introduction span {
+.smallContainer{
+  display: inline-block;
+}
+.Introduction .small_x {
   color: #315390;
   width: 2rem;
   display: inline-block;
@@ -204,4 +207,43 @@
   width: 256px;
   background: #032561 !important;
   color: white !important;
+}
+.small{
+  display: inline-block;
+}
+.ContentEditable{    display: flex;
+  flex-wrap: wrap;
+}
+/* .tags{
+  display: inline-block; 
+  margin: 0;
+  padding: 10px 0;
+} */
+.extraContent::before{
+  content: "X"; 
+  background: #bfd2f5;
+  border: 2px solid #315390;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.2rem;
+  color: #315390;
+  width: 2rem;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-right: 1rem;
+}
+.extraContent::after{
+  content: "X"; 
+  background: #bfd2f5;
+  border: 2px solid #315390;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.2rem;
+  color: #315390;
+  width: 2rem;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  margin-left: 1rem;
 }

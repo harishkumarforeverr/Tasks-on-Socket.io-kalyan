@@ -73,45 +73,50 @@ function App() {
     <div xml-class="App">
       <div xml-class="Introduction" className="Introduction">
         <h1>Introduction</h1>
-        <p
+        <p class="extraContent"
           xml-class="Abstract"
           onContextMenu={(e) => {
             e.preventDefault();
             setIsModalOpen(true);
           }}
         >
-          <span xml-class="Reference_spanX">X</span>Abstract{" "}
-          <span xml-class="Reference_spanX">X</span>
+          {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
+          Abstract{" "}
+          {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
         </p>
-        <p
+        <p class="extraContent"
           xml-class="Abstract"
           onContextMenu={(e) => {
             e.preventDefault();
             setIsModalOpen(true);
           }}
         >
-          <span xml-class="Reference_spanX">X</span>Aknowlegement{" "}
-          <span xml-class="Reference_spanX">X</span>
+          {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
+          Aknowlegement{" "}
+          {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
         </p>
-        <p
+        <p class="extraContent"
           xml-class="Reference"
           onContextMenu={(e) => {
             e.preventDefault();
             setIsModalOpen(true);
           }}
         >
-          <span xml-class="Reference_spanX">X</span>Reference{" "}
-          <span xml-class="Reference_spanX">X</span>
+          {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
+          Reference{" "}
+          {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
         </p>
-        <p
+        <p class="extraContent"
           xml-class="Contents"
           onContextMenu={(e) => {
             e.preventDefault();
             setIsModalOpen(true);
           }}
         >
-          <span xml-class="Reference_spanX">X</span>For Table of Contents use
-          only <span xml-class="Reference_spanX">X</span>
+          {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
+          For Table of Contents use
+          only
+           {/* <div className="small_x" xml-class="Reference_spanX">X</div> */}
         </p>
       </div>
 
@@ -157,7 +162,7 @@ function App() {
               >
                 Delete
               </Button>
-              <span>
+              <div className="smallContainer">
                 <StepBackwardFilled
                   xml-class="playIcons"
                   onClick={() => {
@@ -183,7 +188,7 @@ function App() {
                   xml-class="StepForwardFilled"
                   className="playIcons"
                 />
-              </span>
+              </div>
               <Button
                 xml-class="unstructuredbtn"
                 onClick={() => {
@@ -202,7 +207,7 @@ function App() {
               >
                 save
               </Button>
-              <span>
+              <div className="smallContainer">
                 <DeleteFilled
                   xml-class="DeleteFilled"
                   onClick={() => {
@@ -212,8 +217,8 @@ function App() {
                     color: "red",
                   }}
                 />
-              </span>
-              <span>
+              </div>
+              <div className="smallContainer">
                 <CloseSquareFilled
                   xml-class="CloseSquareFilled"
                   onClick={() => {
@@ -223,7 +228,7 @@ function App() {
                     color: "red",
                   }}
                 />
-              </span>
+              </div>
             </h1>
           </div>
           <div xml-class="conatiner_model" className="conatiner_model">
