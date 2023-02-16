@@ -1,3 +1,4 @@
+ 
 .container_name {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -101,7 +102,7 @@
 }
 .DeleteBtn {
   border-color: red;
-  color: red;
+  color: rgb(228, 16, 16);
 }
 .unstructuredbtn {
   border-color: #02208a;
@@ -151,6 +152,10 @@
 
 .editAble {
   border: 2.6px solid black;
+  padding: 3px;
+  border-radius: 8px;
+  margin-right: 2%;
+  height: 120px;
 }
 .OriginalRefernce {
   font-size: 1.3rem;
@@ -228,10 +233,12 @@
   align-items: center;
   margin-right: 0.2rem;
   color: #315390;
-  width: 2rem;
+  width: 1rem;
+  padding:3px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  margin-right: 1rem;
+  height: 12px;
+  font-size: 14px;
 }
 .extraContent::after{
   content: "X"; 
@@ -242,8 +249,28 @@
   align-items: center;
   margin-right: 0.2rem;
   color: #315390;
-  width: 2rem;
+  width: 1rem;
+  padding:3px;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
-  margin-left: 1rem;
+  margin-left:3px;
+  height: 12px;
+  font-size: 14px;
+}
+
+.ant-menu-submenu-title,.ant-menu-submenu,.ant-menu-submenu:hover{ 
+  background: #0b0b76 !important;
+  margin: 0 !important;
+  color: white !important;
+  font-size: 1.04rem !important;
+}
+
+.leftIcon{
+  color: #1414f3 !important;
+  font-size: 1rem !important;
+  margin-right: .5rem !important;
+}
+.ant-menu-item{
+  font-size: 1rem !important;
+  height: 25px !important;
 }

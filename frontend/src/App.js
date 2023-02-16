@@ -20,24 +20,23 @@ class MyComponent extends React.Component {
     super();
     this.contentEditable = React.createRef();
     this.state = {
-      html: "<div>kalyan harish vindo shiva hvvsdaasjvd auygsdvasgjdvasg advsugascdga fauvsdugasvdugsa fausdcuasdv vadsuvgjdv scadghcashyd ufadsyfady fuasdsavdjas ygasduyasdoq ogsoGSObasjdajsdv igyvdasisycdiqwfqwv fiyqweqywegqigdqiw  </div>",
+      html: "<div> Fredrickson, G. H. The Equilibrium Theory ofInhomogenous Polymers; Oxford Science Publications: Oxford, UK, 2006. </div>",
     };
   }
   componentDidMount() {
     this.handleChange();
   }
-  handleChange = (evt) => {
-    // console.log("evtevtevt",evt.target.value,this.contentEditable.current.innerText)
+  handleChange = (evt) => { 
     const str = this.contentEditable.current.innerText.split(" ");
     const newStr = str
       .map((val, index) => {
         return (
-          "<span " +
-          "style=background:" +
+          "<div " +
+          "style=display:inline;background:" +
           colorObj[index].hex +
           ">" +
           val +
-          "</span>"
+          "</div>"
         );
       })
       .join(" ");
@@ -62,7 +61,7 @@ class MyComponent extends React.Component {
 }
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
   const handleOk = () => {};
   const handleCancel = () => {

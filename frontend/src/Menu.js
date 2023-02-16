@@ -1,4 +1,4 @@
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, MailOutlined, RightOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import { useState } from 'react';
 function getItem(label, key, icon, children, type) {
@@ -11,23 +11,30 @@ function getItem(label, key, icon, children, type) {
   };
 }
 const items = [
-  getItem('Acs-Titles', 'sub1', <MailOutlined />, [
-    getItem('Option 1', '1'),
-    getItem('Option 2', '2'),
-    getItem('Option 3', '3'),
-    getItem('Option 4', '4'),
+  getItem('Acs-Titles', 'sub1', null, [
+    getItem('String-name', '1'),
+    getItem('article-title', '2'),
+    getItem('refsource', '3'),
+    getItem('year', '4'),
+    getItem('volume', '5'),
+    getItem('fpage', '6'),
+    getItem('ipage', '7'),
+    getItem('issue', '8'),
+    getItem('doi', '9'),
+    getItem('e-location', '10'),
   ]),
-  getItem('Navigation Two', 'sub2', <AppstoreOutlined />, [
-    getItem('Option 5', '5'),
-    getItem('Option 6', '6'),
-    getItem('Submenu', 'sub3', null, [getItem('Option 7', '7'), getItem('Option 8', '8')]),
+  getItem('Citation', 'sub2', null, [
+    getItem(<><RightOutlined className='leftIcon' />journal</>, '1'),
+   
+    getItem(<><RightOutlined className='leftIcon' />book</>, '2'),
+
+    getItem(<><RightOutlined className='leftIcon' />thesis</>, '3'),
+    getItem(<><RightOutlined className='leftIcon' />weblink</>, '4'),
+    getItem(<><RightOutlined className='leftIcon' />patent</>, '5'),
+    getItem(<><RightOutlined className='leftIcon' />coputer-program</>, '6'),
+    
   ]),
-  getItem('Navigation Three', 'sub4', <SettingOutlined />, [
-    getItem('Option 9', '9'),
-    getItem('Option 10', '10'),
-    getItem('Option 11', '11'),
-    getItem('Option 12', '12'),
-  ]),
+  
 ];
 
 // submenu keys of first level
